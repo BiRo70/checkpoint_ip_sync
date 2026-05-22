@@ -7,23 +7,23 @@ Management Server in sync with Cloudflare's published IPv4 ranges.
 
 ## Files
 
-| File                               | Purpose                                                          |
-|------------------------------------|------------------------------------------------------------------|
-| `sync_cloudflare_to_checkpoint.py` | Main sync script                                                 |
-| `install_cron.sh`                  | Interactive installer – sets up credentials, cron, and a wrapper |
-| `README.md`                        | This file                                                        |
+| File | Purpose |
+|---|---|
+| `sync_cloudflare_to_checkpoint.py` | Main sync script |
+| `install_cron.sh` | Interactive installer – sets up credentials, cron, and a wrapper |
+| `README.md` | This file |
 
 ---
 
 ## Requirements
 
-| Requirement                          | Notes                                                                 |
-|--------------------------------------|-----------------------------------------------------------------------|
-| Python 3.8+                          | Pre-installed on Gaia R80.40+; use `python3 --version` to verify      |
-| `requests` library                   | `pip3 install requests` if missing                                    |
-| Check Point R80.10+ Management       | Earlier versions have partial API support                             |
-| An API admin account                 | Create via SmartConsole → Manage & Settings → Permissions → API admin |
-| API enabled on the Management Server | SmartConsole → Manage & Settings → API                                |
+| Requirement | Notes |
+|---|---|
+| Python 3.8+ | Pre-installed on Gaia R80.40+; use `python3 --version` to verify |
+| `requests` library | `pip3 install requests` if missing |
+| Check Point R80.10+ Management | Earlier versions have partial API support |
+| An API admin account | Create via SmartConsole → Manage & Settings → Permissions → API admin |
+| API enabled on the Management Server | SmartConsole → Manage & Settings → API |
 
 ---
 
@@ -193,3 +193,6 @@ Server — delete them manually in SmartConsole if required.
   `CheckPointSession` constructor.
 - The API user should have the minimum permission profile needed:
   read-write on Network Objects and Policy Installation.
+
+## License & Disclaimer
+This source code is free to use, modify, and distribute for any purpose without restriction. Attribution is not required, but if you do choose to credit the original author, it is genuinely appreciated. This code is provided as-is, with no warranty or guarantee of any kind — the author assumes no responsibility for its correctness, reliability, or suitability for any particular use case. Use it at your own risk, and always test thoroughly in a non-production environment before deploying to live infrastructure.
