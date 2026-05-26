@@ -1,7 +1,9 @@
-# Cloudflare → Check Point Subnet Sync
+# Check Point Object Subnets Group Sync
 
 Keeps the `GRP_Cloudflare_Subnets` network group on your Check Point
 Management Server in sync with Cloudflare's published IPv4 ranges.
+
+It can be modified to support other IP lists
 
 ---
 
@@ -195,4 +197,4 @@ Server — delete them manually in SmartConsole if required.
   read-write on Network Objects and Policy Installation.
 
 ## License & Disclaimer
-This source code is free to use, modify, and distribute for any purpose without restriction. Attribution is not required, but if you do choose to credit the original author, it is genuinely appreciated. This code is provided as-is, with no warranty or guarantee of any kind — the author assumes no responsibility for its correctness, reliability, or suitability for any particular use case. Use it at your own risk, and always test thoroughly in a non-production environment before deploying to live infrastructure.
+<style>body {text-align: justify}</style> This source code is free to use, modify, and distribute for any purpose without restriction. Attribution is not required, but if you do choose to credit the original author, it is genuinely appreciated. Please note that the majority of this code was written by the free version of Claude AI, with only minor manual modifications made to fix small issues. As such, this code is provided as-is, with no warranty or guarantee of any kind. The author assumes no responsibility for its correctness, reliability, or suitability for any particular use case. Use it at your own risk, and always test thoroughly before deploying to a live production infrastructure.
